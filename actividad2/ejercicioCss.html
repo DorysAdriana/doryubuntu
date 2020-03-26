@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="stilo1.css" rel="stylesheet" type="text/css" />
+  <title>Selectores</title>
+  <style>
+      body
+      {
+          background-color: violet;
+      }
+  </style>
+<head>
+<body>
+  <div id="a">
+    <h1>Selectores en CSS3</h1>
+    <p>
+      El objetivo de esta pagina es mostrar el uso de los selectores en Css3, para que
+      sirven, y cuales son sus tipos asi que no te despeques de aqui!!
+    </p>
+    <h2> que es un selector? </h2>
+    <p>
+      Un selector permite seleccionar un elemento web para de esta forma poder
+      darle estilo, es decir mejorar su estructura a nuestra conveniencia.
+    </p>
+    <h2> Tipos de Selectores </h2>
+    <p>
+      los selectores se clasifican de la siguente manera:<br>
+    </p>
+    <table align="center">
+
+      <tr>  <td><div class="table1">*  Selectores Universales</div></td></tr>
+      <tr>  <td><div class="table2">*  Selectores de hijos</div></td></tr>
+      <tr>  <td><div class="table3">*  Selector Adyacente</div></td></tr>
+      <tr>  <td><div class="table1">*  Selector de Atributos</div></td></tr>
+      </table>
+  </div>
+  <div id="b">
+    <h2> Selector Universal </h2>
+    <p>
+      Este selector se encarga de seleccionar todos los elementos de una pagina<br>
+      normalmente hay que personalizar los margenes y tipo de letra entre otras cosas.<br>
+      en este caso en el selector universal utilizamos la alineacion centrada del texto el tipo de letra fantasy y el estilo de letra italic
+      <br>
+      <font>*
+      {
+          text-align: center;
+          font-style: italic;
+      }</font>
+
+    </p>
+    </div>
+    <div id="c">
+    <h2> Selector de hijos </h2>
+    <p>
+      Referencia el elemento de la derecha cuando tiene el elemento de la izquierda como su padre<br>
+      En este caso usamos el div que lo precede como padre del elemento font con el cual puedo mostrar parte del codigo usado en css.<br>
+      lo que hace es cambiarle el color al teexto y cambiarle el estilo para que resalte un poco.
+      <font>
+      div font
+      {
+        color: crimson;
+        font-style: normal;
+      }</font>
+    </p>
+    </div>
+    <div id="d">
+    <h2> Selector Adyacente </h2>
+    <p>
+      Este selector se encarga de referenciar los elementos que son hermanos la <br>
+      referencia apunta al elemento de la derecha cuando<br>
+      este inmediatamente precedido por el de la izquierda<br>
+      En este caso usamos <br>
+      <font >
+      h2+p
+      {
+        font-size: 0.5cm;
+      } </font><br>
+      para determinar el tamaño de la letra usada en los parrafos que se encontraran adyacentes <br>
+      a las etiquetas h2 que los use como subtitulos
+
+    </p>
+    </div>
+    <div id="e" >
+    <h2> Selector de atributos </h2>
+    <p>
+      Hay varios tipos de selectores de atributos por ahora solo mostrare los 4 primeros tipos de selectores de atributos:<br>
+    </p>
+      <table align="center">
+        <tr><td><div class="table3">.[nombre_elemento]</div></td></tr>
+        <tr>  <td><div class="table2">.[nombre_atributo = valor]</div></td></tr>
+        <tr>  <td><div class="table1">.[nombre_atributo~=valor]</div></td></tr>
+        <tr>  <td><div class="table2">.[nombre_atributo|=valor]</div></td></tr>
+        </table>
+    <p>
+      <h4>.[nombre_elemento]</h4><br> Selecciona los elementos que tienen establecido el atributo llamado "nombre elemento"<br>
+      <h4>.[nombre_atributo = valor]</h4><br> Selecciona los elementos que tienen establecido un atributo llamado atributo con un valor igual a valor<br>
+      <h4>.[nombre_atributo~=valor]</h4><br> Selecciona los elementos con un atributo llamado "nombre_atributo" y su valor es una lista de palabras que es exactamente igual al valor<br>
+      <h4>.[nombre_atributo|=valor]</h4><br> Selecciona los elementos que tienen un atributo llamado "nombre_atributo" y su valor es una serie de palabras separadas por guiones comenzando con un valor y solo son validas para tipo lang<br>
+      los selectores de atributos usados se pueden ver reflejados en las tablas en los cuales se usa para darle color y tipo de texto,fondo y bordes distintos.
+      <font>
+        .table1
+        {
+          font-style: normal;
+          background-color: lightcoral;
+          width: 300px; height: 30px;
+          border: 2px solid black;
+        }<br>
+        .table2
+        {
+          width: 300px; height: 30px;
+          background-color: orange;
+          border: 3px solid orangered;
+        }<br>
+        .table3
+        {
+          font-style: normal;
+          width: 300px; height: 30px;
+          background-color: crimson;
+          border: 1px solid darkviolet;
+        }
+      </font>
+
+
+    </p>
+    </div>
+  <!--</div>-->
+
+</body>
+</html>

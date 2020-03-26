@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Cv</title>
+  <meta charset="utg-8"/>
+</head>
+<body>
+<from id="f1" action="" method="POST" >
+  <div><h2>HOJA DE VIDA</h2> </div>
+<fieldset>
+  <legend>Datos personales</legend>
+  <div>
+    <label for="name">Nombres:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido">
+  </div>
+  <div>Género:</div>
+  <div>
+      <input type="radio" name="rdo_genero" value="M" />Masculino
+      <input type="radio" name="rdo_genero" value="F" checked />Femenino
+      <label for="fecha_nac">Fecha_nac:</label>
+      <input  type="date" name="fecha_nac" />
+  </div>
+  <div>
+    <label>Tipo ID:</label><input type="text" name="doc" list="opciones">
+    <datalist id="opciones">
+      <option  Value="CC cedula de ciudadania">
+      <option  Value="CE cedula de extranjeria">
+      <option  Value="PS pasaporte">
+    </datalist>
+  </div>
+
+
+  <div>
+    <label for="direccion">Direccion:</label>
+    <input type="text" name="direccion" required placeholder="" />
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" required placeholder="" />
+  </div>
+  <div>
+    <label for="celular">Celular:</label>
+    <input type="text" name="celular" required placeholder="" />
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Formacion Academica</legend>
+  <div>
+    <label>Nivel de Escolaridad:</label><input type="text" name="doc" list="nivel_e">
+    <datalist id="nivel_e">
+      <option  Value="Basica Primaria">
+      <option  Value="Basica Secundaria">
+      <option  Value="Tecnico">
+      <option  Value="Tecnologo">
+      <option  Value="Profesional">
+    </datalist>
+    </div>
+    <div>
+      <label>Institucion</label>
+      <textarea name="nombre" rows="4" cols="60" maxlenght="100">
+      Escribe aquí las instituciones a las que pertenecio
+      </textarea>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Aspecto Laboral</legend>
+  <div>
+    <label>Empresa ultimo desempeño laboral:</label>
+    <input type="text" name="doc" multiple>
+  </div>
+  <div>
+    <label>Cargo desempeñado :</label>
+    <input type="text" name="doc">
+  </div>
+  <div>
+    <label>Tiempo laborado :</label>
+    <input type="number" name="doc">
+  </div>
+</fieldset>
+</from>
+</body>
+</html>

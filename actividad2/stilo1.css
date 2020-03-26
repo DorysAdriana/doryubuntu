@@ -1,0 +1,56 @@
+/*Selectores*/
+/*Selector universal*/
+*
+{
+    text-align: center;
+    font-family: fantasy;
+    font-style: italic;
+}
+/*Selectores de etiquetas*/
+p
+{
+    text-align: left;
+}
+h1 {
+  color: purple;
+}
+h2 {
+  color:purple
+}
+h4 {
+  color:purple
+}
+/*selector adyacente*/
+h2+p
+{
+  font-size: 0.5cm;
+}
+/*selector de hijos*/
+div font
+{
+  color: crimson;
+  font-style: normal;
+}
+/*selectores de atributos*/
+
+/* selectores de clases*/
+.table1
+{
+  font-style: normal;
+  background-color: lightcoral;
+  width: 300px; height: 30px;
+  border: 2px solid black;
+}
+.table2
+{
+  width: 300px; height: 30px;
+  background-color: orange;
+  border: 3px solid orangered;
+}
+.table3
+{
+  font-style: normal;
+  width: 300px; height: 30px;
+  background-color: crimson;
+  border: 1px solid darkviolet;
+}
